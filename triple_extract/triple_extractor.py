@@ -30,7 +30,7 @@ custom_objects = {'CRF': CRF, 'crf_loss': crf_loss, 'crf_viterbi_accuracy': crf_
 ner_model = load_model("../sequence_labeling/ccks2019_ner.h5", custom_objects=custom_objects)
 
 # 载入分类模型
-best_model_path = '../text_classification/models/per-rel-08-0.9234.h5'
+best_model_path = '../text_classification/models/per-rel-19-0.9329.h5'
 classification_model = load_model(best_model_path, custom_objects={"Attention": Attention})
 
 # 分类与id的对应关系
