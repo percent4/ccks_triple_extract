@@ -99,23 +99,33 @@ max        25.000000     300.000000
 ```
 _________________________________________________________________
 Train on 173109 samples, validate on 21639 samples
-Epoch 1/5
-173109/173109 [==============================] - 3275s 19ms/step - loss: 0.1269 - crf_viterbi_accuracy: 0.9417 - val_loss: 0.0251 - val_crf_viterbi_accuracy: 0.9613
-Epoch 2/5
-173109/173109 [==============================] - 3252s 19ms/step - loss: -0.0192 - crf_viterbi_accuracy: 0.9623 - val_loss: -0.0612 - val_crf_viterbi_accuracy: 0.9638
-Epoch 3/5
-173109/173109 [==============================] - 3445s 20ms/step - loss: -0.1040 - crf_viterbi_accuracy: 0.9644 - val_loss: -0.1450 - val_crf_viterbi_accuracy: 0.9649
-Epoch 4/5
-173109/173109 [==============================] - 3363s 19ms/step - loss: -0.1869 - crf_viterbi_accuracy: 0.9655 - val_loss: -0.2269 - val_crf_viterbi_accuracy: 0.9652
-Epoch 5/5
-173109/173109 [==============================] - 3266s 19ms/step - loss: -0.2694 - crf_viterbi_accuracy: 0.9662 - val_loss: -0.3088 - val_crf_viterbi_accuracy: 0.9651
+Epoch 1/10
+173109/173109 [==============================] - 422s 2ms/step - loss: 0.4460 - crf_viterbi_accuracy: 0.8710 - val_loss: 0.1613 - val_crf_viterbi_accuracy: 0.9235
+Epoch 2/10
+173109/173109 [==============================] - 417s 2ms/step - loss: 0.1170 - crf_viterbi_accuracy: 0.9496 - val_loss: 0.0885 - val_crf_viterbi_accuracy: 0.9592
+Epoch 3/10
+173109/173109 [==============================] - 417s 2ms/step - loss: 0.0758 - crf_viterbi_accuracy: 0.9602 - val_loss: 0.0653 - val_crf_viterbi_accuracy: 0.9638
+Epoch 4/10
+173109/173109 [==============================] - 415s 2ms/step - loss: 0.0586 - crf_viterbi_accuracy: 0.9645 - val_loss: 0.0544 - val_crf_viterbi_accuracy: 0.9651
+Epoch 5/10
+173109/173109 [==============================] - 422s 2ms/step - loss: 0.0488 - crf_viterbi_accuracy: 0.9663 - val_loss: 0.0464 - val_crf_viterbi_accuracy: 0.9654
+Epoch 6/10
+173109/173109 [==============================] - 423s 2ms/step - loss: 0.0399 - crf_viterbi_accuracy: 0.9677 - val_loss: 0.0375 - val_crf_viterbi_accuracy: 0.9660
+Epoch 7/10
+173109/173109 [==============================] - 415s 2ms/step - loss: 0.0293 - crf_viterbi_accuracy: 0.9687 - val_loss: 0.0265 - val_crf_viterbi_accuracy: 0.9664
+Epoch 8/10
+173109/173109 [==============================] - 414s 2ms/step - loss: 0.0174 - crf_viterbi_accuracy: 0.9695 - val_loss: 0.0149 - val_crf_viterbi_accuracy: 0.9671
+Epoch 9/10
+173109/173109 [==============================] - 422s 2ms/step - loss: 0.0049 - crf_viterbi_accuracy: 0.9703 - val_loss: 0.0036 - val_crf_viterbi_accuracy: 0.9670
+Epoch 10/10
+173109/173109 [==============================] - 429s 2ms/step - loss: -0.0072 - crf_viterbi_accuracy: 0.9709 - val_loss: -0.0078 - val_crf_viterbi_accuracy: 0.9674
            precision    recall  f1-score   support
 
-      OBJ     0.9591    0.8870    0.9216     40844
-     SUBJ     0.9621    0.9202    0.9407     25252
+      OBJ     0.9593    0.9026    0.9301     44598
+     SUBJ     0.9670    0.9238    0.9449     25521
 
-micro avg     0.9603    0.8997    0.9290     66096
-macro avg     0.9602    0.8997    0.9289     66096
+micro avg     0.9621    0.9104    0.9355     70119
+macro avg     0.9621    0.9104    0.9355     70119
 ```
 利用seqeval模块做评估，在验证集上的F1值约为93%。
 
